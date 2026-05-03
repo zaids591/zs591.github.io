@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Syed | Portfolio</title>
+    <style>
+        :root {
+            --primary-bg: #f8fafc;
+            --slate-blue: #475569;
+            --accent-blue: #64748b;
+            --text-main: #1e293b;
+            --card-white: #ffffff;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--slate-blue);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .profile-section { text-align: center; padding: 60px 20px 20px; }
+
+        /* Tutorial Required Styling */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--card-white);
+            box-shadow: var(--shadow);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            max-width: 850px;
+            margin: 0 auto 40px;
+            background: var(--card-white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        h1 { margin: 10px 0; color: var(--slate-blue); font-size: 2.2rem; }
+        .job-title { color: var(--accent-blue); font-size: 1.1rem; margin-bottom: 20px; display: block; }
+        
+        section { padding: 30px 0; border-bottom: 1px solid #f1f5f9; }
+        section:last-child { border-bottom: none; }
+        h2 { color: var(--slate-blue); font-size: 1.4rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; }
+
+        .item { margin-bottom: 25px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: bold; color: var(--slate-blue); }
+        .location-date { display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--accent-blue); font-style: italic; margin-bottom: 8px; }
+        
+        ul { padding-left: 20px; margin-top: 5px; }
+        li { margin-bottom: 8px; font-size: 0.95rem; }
+
+        .skills-tag {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 4px;
+            color: var(--slate-blue);
+        }
+
+        @media (max-width: 600px) {
+            .card { padding: 20px; margin: 10px; }
+            .item-header, .location-date { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+    <header class="profile-section">
+        <img src="Assets/ProfilePic.jpeg" alt="Zaid Syed" class="profile-pic">
+        <div class="card" id="about">
+            <h1>Zaid Syed</h1>
+            <span class="job-title">Accounting Student at Rutgers Business School</span>
+            <p>Based in Sayreville, NJ | (732) 313 5091 | <a href="mailto:zaidxsyed@gmail.com">zaidxsyed@gmail.com</a></p>
+        </div>
+    </header>
+
+    <main class="card">
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="item">
+                <div class="item-header">Sunniness Publishing</div>
+                <div class="location-date"><span>Finance and Operations Lead | Edison, NJ</span><span>Feb 2025 – Present</span></div>
+                <ul>
+                    <li>Manage $7K+ in publishing and marketing budgets and cash flow projections[cite: 98].</li>
+                    <li>Lead financial reporting for an international release targeting 5K+ readers[cite: 99].</li>
+                    <li>Implemented expense tracking systems to reduce processing time by 10%[cite: 100].</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">1199SEIU Benefit and Pension Funds</div>
+                <div class="location-date"><span>Risk Management Intern | New York, NY</span><span>Jun 2025 – Aug 2025</span></div>
+                <ul>
+                    <li>Identified 15+ operational risks, reducing projected losses by 12%[cite: 104].</li>
+                    <li>Strengthened internal audit controls, cutting compliance exceptions by 25%[cite: 105].</li>
+                    <li>Streamlined 6 workflows, boosting reporting efficiency by 30%[cite: 108].</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">1199SEIU Benefit and Pension Funds</div>
+                <div class="location-date"><span>Financial Analyst Intern | New York, NY</span><span>Jun 2024 – Aug 2024</span></div>
+                <ul>
+                    <li>Processed 500+ hospital invoices monthly with 100% policy compliance[cite: 114].</li>
+                    <li>Verified 250+ weekly claims, improving accuracy by 15%[cite: 115].</li>
+                    <li>Resolved 95% of payment discrepancies within two weeks[cite: 117].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="leadership">
+            <h2>Leadership & Involvement</h2>
+            <div class="item">
+                <div class="item-header">Rutgers Submissions</div>
+                <div class="location-date"><span>Event Planning Head | New Brunswick, NJ</span><span>Sep 2025 – Present</span></div>
+                <ul>
+                    <li>Direct budgeting for 5+ annual events with individual budgets of $2K+[cite: 124].</li>
+                    <li>Supervise a team of 8 to ensure 100% on-time execution for 200+ students[cite: 125].</li>
+                    <li>Increased event attendance by 25% through strategic resource allocation[cite: 126].</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">Rutgers Business School</div>
+                <div class="location-date"><span>B.S. in Accounting | New Brunswick, NJ</span><span>Expected May 2027</span></div>
+                <p><strong>Relevant Coursework:</strong> Financial & Managerial Accounting, Intermediate Accounting, Accounting Information Systems, Macro/Microeconomics, Operations Management[cite: 91, 92].</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div style="text-align: center;">
+                <span class="skills-tag">Excel</span>
+                <span class="skills-tag">PowerPoint</span>
+                <span class="skills-tag">Word</span>
+                <span class="skills-tag">Python</span>
+                <span class="skills-tag">R</span>
+                <span class="skills-tag">PowerBI</span>
+                <span class="skills-tag">Tableau</span> [cite: 128]
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align:center; padding-bottom: 40px; color: var(--accent-blue);">
+        <p>&copy; 2026 Zaid Syed | Built via GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
